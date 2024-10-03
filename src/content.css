@@ -1,0 +1,55 @@
+/* content.css */
+
+/* General container for the content */
+.content-container {
+    padding: 20px;
+}
+
+/* Styling for the main heading */
+.content-container h3 {
+    color: #b5651d; /* Light brown shade */
+    text-align: left; /* Aligns the text to the left */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+/* Rows that contain image and text */
+.content-rows {
+    display: flex; /* Flexbox for horizontal layout */
+    align-items: flex-start; /* Aligns items at the start */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+/* Styling for the images */
+.content-img img {
+    width: 175px; /* Fixed width */
+    height: 143px; /* Fixed height */
+    margin-left: 40px;
+    margin-right: 15px; /* Space between image and text */
+}
+
+/* Styling for the text container */
+.content-text {
+    margin-right: 40px;
+    flex: 1; /* Take up the remaining space */
+}
+
+/* H3 within content text */
+.content-text h3 {
+    color: #586a92; /* Color for H3 text */
+    margin-bottom: 5px; /* Space below H3 */
+}
+
+/* Paragraphs within content text */
+.content-text p {
+    color: #818184; /* Color for paragraph text */
+}
+
+
+
+
+.contenthead{
+    color: #b79d74;
+    text-align: left;
+    margin-left: 70px;
+    font-size: 40px;
+}
