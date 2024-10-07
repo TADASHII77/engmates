@@ -76,6 +76,7 @@
         text-align: center; /* Center text */
     }
     .content-text{
+        white-space: wrap; 
         margin-left: 10px;
         margin-right: 0px;
     }
