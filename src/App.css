@@ -2,7 +2,7 @@ body {
   font-family: 'Nunito', sans-serif; /* Use quotes for font names */
 }
 
-
+/*header.css*/
 .header{
   display: flex;
   top: 0;
@@ -21,7 +21,10 @@ body {
 
 
 .logo {
+  width:200px;
+  height:75px;
   font-size: 28px;
+  margin-top: 20px;
   margin-left: 50px;
   padding: 0;
   line-height: 1;
@@ -165,6 +168,8 @@ h2 {
 }
 video{
   border-radius: 30px;
+  width:560px;
+  height:315px;
 }
 strong{
   font-weight: bolder;
@@ -188,4 +193,127 @@ strong{
   color: orange;
   font-size: 17px;
   margin-bottom: 15px;
+}
+
+/* Existing styles... */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center;
+      font-size: small;
+  }
+
+  .navbar {
+      
+      flex-direction: column; /* Stack navigation links */
+      align-items: center;
+  }
+  .navbar a{
+    font-size: 10px
+  }
+  .whats:hover{
+    color: white;
+    background-color: orange;
+  }
+  .nav-link:hover{
+    color: orange;
+  }
+  .bodycontainer {
+      flex-direction: column; /* Stack body columns */
+  }
+  
+  h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 26px;
+  }
+  h2{
+    font-size: 10px;
+  }
+  .bodyanchor{
+    padding: 8px 15px 8px 15px;
+    font-size: 10px;
+    
+  }
+  .anchor{
+    margin-top: 10px;
+  }
+  .bodypara{
+    font-size: 9px;
+  }
+  .para{
+    margin-bottom: 20px;
+  }
+  .block{
+    font-size: 9px;
+  }
+  video{
+    border-radius:30px;
+    width:300px;
+    height:200px;
+    margin-left:40px;
+  }
+  .bodycolumn-1, .bodycolumn-2 {
+      width: 100%; /* Full width */
+  }
+
+  
+  .whats{
+    font-size: 10px;
+    padding: 5px 7px 5px 7px;
+  }
+  .logo{
+    margin-top: 15px;
+    
+    width:150px;
+    height:50px;
+    margin-left:0px;
+    
+  }
+}
+
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+      flex-direction: row; /* Horizontal layout */
+      justify-content: space-between; /* Space out elements */
+  }
+
+  .bodycontainer {
+      flex-direction: row; /* Horizontal layout */
+  }
+
+  .bodycolumn-1, .bodycolumn-2 {
+      width: 50%; /* Half width */
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+  .bodycontainer {
+      display: flex; /* Flex for desktop layout */
+  }
+
+  .bodycolumn-1, .bodycolumn-2 {
+      width: 50%; /* Maintain half width */
+  }
+
+  .content-rows {
+      display: flex; /* Flex layout for content */
+      flex-direction: row; /* Horizontal alignment */
+      align-items: center; /* Center items vertically */
+  }
+
+  .content-img {
+      flex: 1; /* Take equal space */
+      padding: 10px;
+  }
+
+  .content-text {
+      flex: 2; /* Take double space */
+      padding: 10px;
+  }
 }

@@ -1,22 +1,19 @@
 import React from 'react';
 import Header from './Header';
-import Body from './body';
+import Body from './Body';
+import Content from './Content';
 import Footer from './Footer';
-import Content from './content';
-import './App.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
-
-
+import './App.css'; // Import your CSS styles here
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Body />
-      <Content />
-      <Footer />
-    </>
-  );
+    return (
+        <div>
+            <Header />
+            <Body />
+            <Content />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

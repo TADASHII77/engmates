@@ -53,3 +53,42 @@
     margin-left: 70px;
     font-size: 40px;
 }
+
+
+/* Existing styles... */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 10px; /* Add padding */
+    }
+    .contenthead{
+        font-size:30px;
+    }
+    
+    .content-rows {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .content-img, .content-text {
+        width: 100%; /* Full width */
+        text-align: center; /* Center text */
+    }
+    .content-text{
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .content-rows {
+        flex-direction: row; /* Horizontal layout */
+    }
+
+    .content-img, .content-text {
+        width: 50%; /* Half width */
+        text-align: left; /* Left-align text */
+    }
+}
